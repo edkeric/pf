@@ -1,0 +1,22 @@
+.home {
+  height: 100%;
+  padding-top: 40vh;
+  overflow: hidden;
+  align-items: center;
+  text-align: center;
+  background-image: url('root/img/img.jpg') center top;
+  background-size: cover;
+}
+
+.home__name {
+  font-size: 5rem;
+  padding-bottom: 1rem;
+  margin-top: 1rem;
+  border-bottom: 3px solid #302a2a;
+}
+
+.home__name--last {
+  color: #3a3737;
+  font-weight: 700;
+}
+/*# sourceMappingURL=home.css.map */

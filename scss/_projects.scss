@@ -1,0 +1,132 @@
+.projects {
+    padding-bottom: 2rem;
+    background: black;
+   
+
+    &__bio-image {
+        height:30vh;
+        width: 100%;
+        background: black
+        url('../img/b1.jpg') center top;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+
+        .text-secondary {
+          font-size: 1.7rem;
+          margin-bottom: 5rem;
+          color: rgb(216, 215, 196);
+          font-family: 'Sunflower', sans-serif;;
+        }
+      }
+        
+    
+      &__items {
+          width: 70vw;
+          margin: 2rem auto 0 auto;
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-gap: 4rem;
+          justify-content: center;
+      }
+  
+      &__item {
+          position: relative;
+          border-bottom: 5px solid $weird-color;
+          border-top: 5px solid $weird-color;
+          overflow: hidden;
+          cursor: pointer;
+          text-align: center;
+          p{
+              padding: 1rem 0 1rem 0;
+          }
+  
+          img {
+           width: 100%;
+        }
+      
+
+          &::after {
+              content: '';
+              position: absolute;
+              top: 100%;
+              left: 0;
+              height: 100%;
+              width: 100%;
+              background: $weird-color;
+              opacity: 0;
+              @include transition-ease;
+          }
+          &:hover {
+              &::after {
+                  top: 0;
+                  opacity: 0.9;
+              }
+              .projects__btn {
+                  opacity: 1;
+                
+              }
+          }
+      }
+
+
+      &__btns {
+          position: absolute;
+          top: 0;
+          height: 100%;
+          width: 100%;
+          z-index: 1;
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          align-items: center;
+          text-align: center;
+      }
+       
+      &__btn {
+          opacity: 0;
+          color: set-text-color($another-color);
+          @include transition-ease;
+  
+          &:hover {
+              color: set-text-color(set-text-color($onemore-color));
+          }
+      }
+       
+      .social-icons {
+          display: flex;
+          flex-direction: column;
+      }
+     
+  
+      footer {
+          font-size: small;
+          color: darkgreen;
+          margin-right: 10px;
+          transform: 
+            rotate(90deg)
+            translate(-3rem, -5rem);
+      }
+  }
+
+       
+           
+        
+
+        
+
+
+
+      
+
+
+  
+      
+
+
+
+       
+       
+       
+
+    

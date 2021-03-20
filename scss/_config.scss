@@ -1,0 +1,45 @@
+$primary-color:  #1b1f1e;
+$secondary-color: rgb(241, 240, 237);
+$another-color: rgb(241, 240, 237);
+$onemore-color: rgb(179, 170, 144);
+$greengrad-color: linear-gradient(139deg,#377e72cb 0%,#664f5bb6 90%);
+$darkgrad-color: linear-gradient(145deg, #000000 25%, #2c2525 64%);
+$darkkgrad-color: linear-gradient(315deg, #000000 10%, #414141 74%);
+$blackgrad-color: linear-gradient(145deg, #000000 35%, #131010 10%);
+$green-color: #333;
+$weird-color: #810b0bbb;
+$black-color:rgb(24, 23, 23);
+$blackgrey-color: rgb(30, 32, 38);
+$overlay-color: rgb(27, 2, 2);
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@mixin transition-ease {
+    transition: all 0,5s easy-in-out;
+}
+@function set-text-color($color) {
+    @if (lightness($color) > 40%) {
+        @return #000
+    } @else {
+        @return #fff;
+    }
+}
+
+@mixin media-md {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+} 
+@mixin media-lg {
+    @media screen and (min-width: 1024px) {
+        @content;
+    }
+} 
+@mixin media-xl {
+    @media screen and (min-width: 1600px) {
+        @content;
+    }
+} 

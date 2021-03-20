@@ -1,0 +1,43 @@
+.contact {
+    height: 100%;
+    padding-top: 40vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background:
+    linear-gradient(to right, 
+    rgba($black-color, 0.8),
+    rgba($primary-color, 0.7)
+    ), 
+  
+    url('../img/bor4.jpg');
+    background-size: cover;
+  
+    
+
+   h2 {
+       font-size: 3rem;
+       margin-bottom: 2rem;
+       color: rgb(168, 165, 165);
+   }
+
+   &__list {
+       display: grid;
+       grid-template-columns: 1fr;
+       grid-gap: 2rem;
+       font-size: 1.5rem;
+       color: rgb(182, 184, 182);
+   }
+
+   .social-icons {
+       position: initial;
+       margin-top: 2rem;
+       color: darkgrey;
+   }
+   footer {
+    color: rgb(104, 98, 87);
+    font-size: small;
+}
+
+}

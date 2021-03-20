@@ -1,0 +1,28 @@
+.home {
+    height: 100%;
+    padding-top: 40vh;
+    overflow: hidden;
+    align-items: center;
+    text-align: center;
+    background:
+    url('../img/bh.jpg') center top;
+    background-size: cover;
+  
+    
+
+    
+    &__name {
+      font-size: 5rem;
+      color: rgb(238, 214, 214);
+      padding-bottom: 2rem;
+      margin-bottom: 1rem;
+      border-bottom: 3px solid rgb(85, 64, 64);
+     
+      &--last {
+          color: rgb(71, 63, 63);
+          font-weight: 700;
+          
+      }
+    }
+
+}
